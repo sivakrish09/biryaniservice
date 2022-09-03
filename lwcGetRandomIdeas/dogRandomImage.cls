@@ -1,4 +1,5 @@
 public without sharing class  dogRandomImage {
+	// briyani api calling
     @AuraEnabled (cacheable=true)
     public static string getBiRandomImage() {
 		
@@ -9,6 +10,8 @@ public without sharing class  dogRandomImage {
         HttpResponse response = http.send(request);
         return response.getBody();
     }
+	// dog api calling
+	
        @AuraEnabled (cacheable=true)
     public static string getDogRandomImage() {
 		
@@ -19,6 +22,7 @@ public without sharing class  dogRandomImage {
         HttpResponse response = http.send(request);
         return response.getBody();
     }
+	// motivational quotes displaying
     @AuraEnabled (cacheable=true)
     public static string getRandomQuote()
     {
